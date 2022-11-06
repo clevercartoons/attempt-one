@@ -21,14 +21,15 @@
                                                 <div class="col-12">
                                                     <form method="post" action="{{ route('store.profile') }}" enctype="multipart/form-data">
                                                         @csrf
-                                                        <center>
-                                                            <img id="showImage" class="avatar avatar-lg" src="{{ asset('backend/app-assets/images/pages/login-v2.svg') }}" alt="Card image cap" width="200" height="200">
-                                                        </center><br>
+                                                            <center>
+                                                                <img id="showImage" class="avatar avatar-lg" src="{{ asset('backend/app-assets/images/pages/login-v2.svg') }}" alt="Card image cap" width="200" height="200">
+                                                            </center><br>
                                                         <p>
                                                             <code>Hey {{ Auth::user()->name }}, This is the current information that is currently available about your profile:</code>
                                                         </p>
                                                         <div class="form-group">
                                                             <label for="defaultInput">Your Name:</label>
+                                                            <br>
                                                             <input name="name" class="form-control" type="text" value="{{ $editData->name }}"  id="example-text-input">
                                                         </div>
                                                         <div class="form-group">
@@ -44,7 +45,7 @@
                                                             <input name="profile_image" class="form-control" type="file"  id="image">
                                                         </div>
                                                         <center>
-                                                            <a href="{{ route('edit.profile') }}" class="btn btn-info btn-rounded waves-effect waves-light" > Update Profile</a>
+                                                            <input type="submit" class="btn btn-info waves-effect waves-light" value="Update Profile">
                                                         </center>
                                                     </form>
                                                 </div>
