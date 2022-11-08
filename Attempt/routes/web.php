@@ -15,7 +15,7 @@ use App\Http\Controllers\AdminController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('frontend.index');
 
 });
 
