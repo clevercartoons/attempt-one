@@ -13,7 +13,7 @@
                             <div class="col-xl-12">
                                 <div class="card"><br><br><br>
                                     <center>
-                                                <img id="showImage" class="avatar avatar-lg" src="{{ asset('backend/app-assets/images/pages/login-v2.svg') }}" alt="Card image cap" width="200" height="200">
+                                                <img id="showImage" class="avatar avatar-lg" src="{{ (!empty($adminData->profile_image))? url('upload/admin_images/'.$adminData->profile_image):url('upload/no_image.jpg') }}" alt="Card image cap" width="200" height="200">
                                     </center>
 
                                     <div class="card-body">
