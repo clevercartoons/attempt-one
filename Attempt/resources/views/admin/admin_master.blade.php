@@ -2,7 +2,6 @@
 <html class="loading semi-dark-layout" lang="en" data-layout="semi-dark-layout" data-textdirection="ltr">
     <!-- BEGIN: Head-->
     <head>
-
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimal-ui">
@@ -115,6 +114,11 @@
             }
         })
     </script>
+    <!--tinymce js-->
+    <script src="{{ asset('backend/assets/libs/tinymce/tinymce.min.js') }} "></script>
+
+    <!-- init js -->
+    <script src="{{ asset('backend/assets/js/pages/form-editor.init.js') }} "></script>
 </body>
 <!-- END: Body-->
 </html>
