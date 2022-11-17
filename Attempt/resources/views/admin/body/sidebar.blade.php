@@ -64,10 +64,13 @@
                     </span>
                 </a>
                 <ul class="menu-content">
-                    <li><a class="d-flex align-items-center" href="{{ route('about.page') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Preview</span></a>
+                    <li><a class="d-flex align-items-center" href="{{ route('about.page') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Content</span></a>
                     </li>
-                    <li><a class="d-flex align-items-center" href="{{ route('about.multi.image') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">About Multiple Images</span></a>
+                    <li><a class="d-flex align-items-center" href="{{ route('about.multi.image') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Add Multi-Images</span></a>
                     </li>
+                    <li><a class="d-flex align-items-center" href="{{ route('all.multi.image') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">All Images</span></a>
+                    </li>
+
                 </ul>
             </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>

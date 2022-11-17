@@ -101,5 +101,26 @@ class AboutController extends Controller
         return redirect()->back()->with($notification);
 
 
-     }// End Method
+    }// End Method
+    public function AllMultiImage(){
+
+        $allMultiImage = MultiImage::all();
+        return view('admin.about_page.all_multiimage',compact('allMultiImage'));
+
+    }// End Method
+    public function DeleteMultiImage($id){
+
+        $multi = MultiImage::findOrFail($id);
+        $img = $multi->multi_image;
+        unlink("upload/multi/$img");
+
+        MultiImage::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => ' $id Image Deleted Successfully',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+    }// End Method
 }
