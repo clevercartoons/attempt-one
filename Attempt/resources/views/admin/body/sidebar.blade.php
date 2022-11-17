@@ -73,6 +73,20 @@
 
                 </ul>
             </li>
+            <li class=" nav-item">
+                <a class="d-flex align-items-center" href="#">
+                    <i data-feather="file-text"></i>
+                    <span class="menu-title text-truncate" data-i18n="Invoice">
+                        Portfolio Page Setup
+                    </span>
+                </a>
+                <ul class="menu-content">
+                    <li><a class="d-flex align-items-center" href="{{ route('all.portfolio') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Preview">Add Portfolio</span></a>
+                    </li>
+                    <li><a class="d-flex align-items-center" href="{{ route('add.portfolio') }}"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Edit">Add</span></a>
+                    </li>
+                </ul>
+            </li>
             <li class=" nav-item"><a class="d-flex align-items-center" href="#"><i data-feather="shopping-cart"></i><span class="menu-title text-truncate" data-i18n="eCommerce">eCommerce</span></a>
                 <ul class="menu-content">
                     <li><a class="d-flex align-items-center" href="app-ecommerce-shop.html"><i data-feather="circle"></i><span class="menu-item text-truncate" data-i18n="Shop">Shop</span></a>
